@@ -18,6 +18,8 @@ public class ClipboardHistory {
 
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Tray t = new Tray();
 
         int i = 1000;
         String old = "";
