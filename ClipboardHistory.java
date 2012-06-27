@@ -73,6 +73,7 @@ public class ClipboardHistory {
     public static String getClipboardContents() {
         String result = "";
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        //String name="";
         //odd: the Object param of getContents is not currently used
         Transferable contents = clipboard.getContents(null);
         boolean hasTransferableText =
@@ -81,6 +82,7 @@ public class ClipboardHistory {
         if (hasTransferableText) {
             try {
                 result = (String) contents.getTransferData(DataFlavor.stringFlavor);
+                //name=clipboard.getName();
             } catch (UnsupportedFlavorException ex) {
                 //highly unlikely since we are using a standard DataFlavor
                 System.out.println(ex);
@@ -90,7 +92,10 @@ public class ClipboardHistory {
                 ex.printStackTrace();
             }
         }
-        return result;
+        return //name+
+                //":"+
+                //System:
+                result;
     }
 
     @org.junit.Test
@@ -110,7 +115,7 @@ class Tray {
         final TrayIcon trayIcon =
                 new TrayIcon(
                 Toolkit.getDefaultToolkit().createImage(
-                    "icon.gif"
+                    "scroll.png"
                 //, "tray icon")
                 ));
         final SystemTray tray = SystemTray.getSystemTray();
@@ -120,6 +125,7 @@ class Tray {
         CheckboxMenuItem cb1 = new CheckboxMenuItem("Set auto size");
         CheckboxMenuItem cb2 = new CheckboxMenuItem("Set tooltip");
         Menu displayMenu = new Menu("Display");
+        
         MenuItem errorItem = new MenuItem("Error");
         MenuItem warningItem = new MenuItem("Warning");
         MenuItem infoItem = new MenuItem("Info");
