@@ -1,22 +1,9 @@
 
 author: shane
 license: gpl3 or greater
+written in python and Tk
 
 what works
 -polls clipboard
 -gets cb contents
--prints them
--show tray icon
--pop up menu
-
-TODO
--tray icon image
--get contents on change only (possible? in java7 maybe)
-	FlavorListener? nope
--pop up menu choices
-	o on
-	o off
-	o see history
-	o to file, change file
--pop up menu actions
-	o Command class
+-floats on top of other windows
