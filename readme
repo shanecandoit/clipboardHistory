@@ -1,6 +1,5 @@
-author: shane
-license: gpl3 or greater
-written in python and Tk
+Clipboard History
+written in python and Tk, gpl3
 
 This program shows a history of your clipboard history.
 Logs your copy pastes, if you will.
