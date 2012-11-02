@@ -1,9 +1,6 @@
-
 author: shane
 license: gpl3 or greater
 written in python and Tk
 
-what works
--polls clipboard
--gets cb contents
--floats on top of other windows
+This program shows a history of your clipboard history.
+Logs your copy pastes, if you will.
