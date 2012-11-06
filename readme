@@ -1,13 +1,13 @@
 Clipboard History
-=
+=================
 
 written in python and Tk, gpl3
 
 This program shows a history of your clipboard history.
--
+--------------------------------------------------------
 
 Logs your copy pastes, if you will.
 
 Want a feature added? Enter it below.
--an installer
--live in the system tray, not the taskbar
+- an installer
+- live in the system tray, not the taskbar
